@@ -1,0 +1,37 @@
+{
+  "chat": "Лидская байдарка криминальных авторитетов",
+  "chatId": "-1001671297906",
+  "participants": [
+    {
+      "name": "Денис М",
+      "username": "mishankov",
+      "notes": "Создатель Альберта, владелец"
+    },
+    {
+      "name": "Денис Х",
+      "username": "denis_away",
+      "notes": "Любитель тестировать границы AI"
+    },
+    {
+      "name": "Ксюша",
+      "username": "Arafelle",
+      "notes": "Любительница стикеров"
+    },
+    {
+      "name": "Таня",
+      "username": "meloni103",
+      "notes": "Участница, любит шутить про AI-голоса"
+    },
+    {
+      "name": "Алёна",
+      "username": "AlenaRogozinskaya",
+      "notes": "Ждёт хорошего дня"
+    },
+    {
+      "name": "Катя",
+      "username": "prokopushkaa",
+      "notes": "Любит предсказания о том, как становится неприлично богатой"
+    }
+  ],
+  "lastUpdated": "2026-02-20"
+}

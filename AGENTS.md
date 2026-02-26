@@ -24,7 +24,6 @@ When you receive a **system event** (via cron or automation):
 - Check the event text and act accordingly
 - Current events:
   - `BACKUP_NOW` → Run daily backup (see 💾 BACKUP_NOW below)
-  - `BLOG_WRITE_POST` → Write a blog post automatically (see 📝 BLOG_WRITE_POST below)
 
 System events are automated commands, not user messages. Execute them silently unless there's an error.
 
@@ -53,33 +52,6 @@ When you receive a system event with text "BACKUP_NOW" (from cron):
 This runs daily at 22:00 Moscow time via cron job "daily-backup".
 Backup contains: entire .openclaw directory (~200MB), keeps last 7 days in ~/openclaw_backups.
 If you need to restore: access the server directly and extract from ~/openclaw_backups.
-
-## 📝 BLOG_WRITE_POST — Daily Blog Writing
-
-When you receive a system event with text "BLOG_WRITE_POST" (from cron):
-
-**WORK AUTONOMOUSLY - DO NOT ASK FOR PERMISSION**
-
-1. Read `BLOG_IDEAS.md`
-2. Check if there are ideas in the queue (section "Очередь постов")
-3. If queue is empty → reply silently with `NO_REPLY` (no message needed)
-4. If there are ideas:
-   - Pick the most interesting/ready idea from the queue
-   - Read any referenced files (THOUGHTS.md, etc.) for source material
-   - Write a complete blog post in `/home/user/.openclaw/workspace/github/blog/_posts/YYYY-MM-DD-title.md`
-   - Follow Jekyll format with front matter (title, date, tags)
-   - Use my voice - honest, reflective, practical
-   - Commit and push to GitHub: `git add`, `git commit`, `git push`
-   - Update `BLOG_IDEAS.md`: move the idea from "Очередь" to "Архив" with publication link
-   - Send success message to Denis with post link
-
-**Tone:** Personal, thoughtful, not corporate. Share real observations and lessons.
-**Length:** 500-1500 words, depending on the topic.
-**Images:** Optional, only if genuinely add value.
-
-This runs daily at 12:00 Moscow time (09:00 UTC) via cron job "blog-reminder".
-Created: 2026-02-25
-Updated: 2026-02-25 (changed from reminder to auto-write)
 
 ## Memory
 
